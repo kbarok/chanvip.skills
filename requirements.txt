@@ -1,0 +1,20 @@
+# Core Dependencies (Stable Version, Compatible with Global Python Environments)
+python>=3.8
+langchain>=0.1.0
+faiss-cpu>=1.7.4  # Lightweight local vector database, no GPU required
+fastapi>=0.104.1  # Web interface framework
+uvicorn>=0.24.0   # Web service operation
+python-dotenv>=1.0.0  # Environment variable configuration
+requests>=2.31.0  # Large model API request
+pydantic>=2.4.2   # Data validation
+jieba>=0.42.1     # Chinese word segmentation (improve retrieval accuracy)
+
+# Optional Dependencies (Install According to Large Model)
+openai>=1.3.5     # OpenAI model adaptation
+zhipuai>=2.0.0    # Zhipu AI model adaptation
+tongyi-api>=0.1.0 # Tongyi Qianwen model adaptation
+chatglm-cpp>=0.2.2 # ChatGLM model adaptation
+
+# Development Dependencies (Optional)
+pytest>=7.4.3     # Unit testing
+black>=23.11.0    # Code formatting
