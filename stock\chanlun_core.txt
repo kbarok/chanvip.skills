@@ -1,0 +1,46 @@
+Chan Theory Core Theory (Original Text Collation):
+
+1.  Trend Completeness: Any trend type of any level will eventually be completed. This is the core premise of Chan Theory and the foundation of all operations. Trends can be divided into three types: rising, falling, and consolidation. No matter what type of trend, it will inevitably reach the end. This is an objective law of the market, not subject to human will.
+
+2.  K-Line Pattern: The pattern is the basic component of Chan Theory, divided into top pattern and bottom pattern. A top pattern consists of three K-lines, where the high point of the middle K-line is the highest among the three K-lines, and the low point is also the highest among the three K-lines; a bottom pattern is the opposite, where the low point of the middle K-line is the lowest among the three K-lines, and the high point is also the lowest among the three K-lines. The pattern is a preliminary signal to judge the trend reversal, but it needs to be confirmed with other conditions.
+
+3.  Pen: A pen is composed of patterns, and a pen is formed between adjacent top and bottom patterns. The establishment of a pen needs to meet certain conditions: there is at least one K-line between the top pattern and the bottom pattern, and the amplitude of the pen must meet certain requirements (specifically, it can be judged in combination with the actual trend). Pens are divided into rising pens and falling pens, which are the foundation of forming line segments.
+
+4.  Line Segment: A line segment is composed of pens, consisting of at least three pens, and these three pens must have overlapping parts. The direction of the line segment is consistent with the direction of the dominant pen among them, divided into rising line segments and falling line segments. The end of a line segment requires a clear reversal signal, which can be confirmed by patterns, divergences, etc.
+
+5.  Central Hub: The central hub is the core concept of Chan Theory and the most important part of the trend. A central hub is an overlapping area composed of at least three consecutive line segments, divided into rising central hubs and falling central hubs. The role of the central hub is to digest the long and short forces of the market, determine the direction and strength of the trend, and any trend revolves around the central hub.
+
+6.  Divergence: Divergence is a key signal to judge trend reversal, divided into top divergence and bottom divergence. Top divergence occurs in an upward trend. When the stock price hits a new high, but the corresponding trading volume or MACD and other indicators do not hit a new high, it indicates insufficient upward momentum, and a reversal is likely to occur; bottom divergence occurs in a downward trend. When the stock price hits a new low, but the indicators do not hit a new low, it indicates that the downward momentum is exhausted, and a rebound is likely to occur.
+
+7.  Trading Points: All trading points of Chan Theory are generated based on the central hub and divergence, divided into three types:
+    - Type 1 Trading Point: Appears at the end of the trend, triggered by divergence, and is the most accurate and safest trading point;
+    - Type 2 Trading Point: Appears in the correction or rebound after the Type 1 trading point, is a confirmation of the Type 1 trading point, and the risk is relatively low;
+    - Type 3 Trading Point: Appears after the formation of the central hub, is a signal of central hub destruction, suitable for aggressive operations.
+
+8.  Level: The level of Chan Theory is one of the core logics. Any trend can be analyzed at different levels (such as 1-minute, 5-minute, 30-minute, daily line, etc.). Large-level trends are composed of small-level trends. When operating, it is necessary to clarify your own operating level and follow the principle of "large-level determines direction, small-level finds trading points".
+
+The above is the core theory of Chan Theory. All contents are sorted out based on Chan Master's public original texts without any additional interpretation. For detailed cases, please refer to Chan Master's blog original texts.
+
+---
+缠论核心理论原文整理：
+
+1.  走势终完美：任何级别的任何走势类型，终要完成。这是缠论的核心前提，也是所有操作的基础。走势可分为上涨、下跌、盘整三种类型，无论哪种走势，都必然会走到终点，这是市场的客观规律，不随人的意志转移。
+
+2.  K线分型：分型是缠论的基础构件，分为顶分型和底分型。顶分型由三根K线组成，中间一根K线的高点是三根K线中最高的，低点也是三根K线中最高的；底分型则相反，中间一根K线的低点是三根K线中最低的，高点也是三根K线中最低的。分型是判断走势转折的初步信号，但需结合其他条件确认。
+
+3.  笔：笔是由分型构成的，相邻的顶分型和底分型之间构成一笔。笔的成立需要满足一定的条件：顶分型和底分型之间至少有一根K线，且笔的幅度要符合一定的要求（具体可结合实际走势判断）。笔分为上升笔和下降笔，是构成线段的基础。
+
+4.  线段：线段是由笔构成的，由至少三笔组成，且这三笔必须有重叠的部分。线段的方向与其中占主导地位的笔的方向一致，分为上升线段和下降线段。线段的结束需要有明确的转折信号，可通过分型、背驰等方式确认。
+
+5.  中枢：中枢是缠论的核心概念，是走势中最重要的组成部分。中枢是由至少三个连续的线段构成的重叠区域，分为上升中枢和下降中枢。中枢的作用是消化市场的多空力量，决定走势的方向和力度，任何走势都围绕中枢展开。
+
+6.  背驰：背驰是判断走势转折的关键信号，分为顶背驰和底背驰。顶背驰出现在上涨走势中，当股价创新高，但对应的成交量或MACD等指标没有创新高，说明上涨力度不足，大概率会出现转折；底背驰则出现在下跌走势中，股价创新低，但指标没有创新低，说明下跌力度衰竭，大概率会反弹。
+
+7.  买卖点：缠论的买卖点均基于中枢和背驰产生，分为三类：
+    - 一类买卖点：出现在走势的终点，由背驰引发，是最精准、最安全的买卖点；
+    - 二类买卖点：出现在一类买卖点之后的回调或反弹中，是对一类买卖点的确认，风险相对较低；
+    - 三类买卖点：出现在中枢形成之后，是中枢破坏的信号，适合激进型操作。
+
+8.  级别：缠论的级别是核心逻辑之一，任何走势都可以在不同级别上进行分析（如1分钟、5分钟、30分钟、日线等）。大级别走势由小级别走势构成，操作时需明确自己的操作级别，遵循“大级别定方向，小级别找买点”的原则。
+
+以上为缠论核心理论，所有内容均基于禅师公开原文整理，不添加任何额外解读，如需详细案例，可参考禅师博客原文。
