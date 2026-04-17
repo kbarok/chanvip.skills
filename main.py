@@ -1,53 +1,80 @@
+"""
+chanvip.skills — 主程序入口
+Chan Master Full-Domain AI Skill Package
+"""
 import os
 import argparse
 from dotenv import load_dotenv
 from rag.chat import ChanvipChat
 from web.main import run_web_app
 
-# Load environment variables
 load_dotenv()
 
 def main():
-    # Parse command line arguments to select running mode
-    parser = argparse.ArgumentParser(description="chanvip.skills Startup Program (Chan Master Full-Domain AI Skill)")
-    parser.add_argument("--mode", type=str, default="cli", choices=["cli", "web"], 
-                        help="Running mode: cli (command line), web (Web interface), default cli")
+    parser = argparse.ArgumentParser(
+        description="chanvip.skills — 缠中说禅 · 全域AI技能包",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+示例:
+  python main.py --mode cli          # 命令行交互模式
+  python main.py --mode web          # 网页界面模式
+  python main.py --mode cli --query "禅师，什么是走势必完美？"
+        """
+    )
+    parser.add_argument("--mode", type=str, default="cli",
+                        choices=["cli", "web"],
+                        help="运行模式: cli=命令行, web=网页界面")
+    parser.add_argument("--query", type=str, default=None,
+                        help="直接传入问题（仅cli模式，自动化使用）")
     args = parser.parse_args()
 
-    # Initialize Chan Master dialogue instance
     chat = ChanvipChat()
 
-    # Start the corresponding mode
     if args.mode == "cli":
-        print("="*50)
-        print("chanvip.skills (Chan Master Full-Domain AI Skill)")
-        print("="*50)
-        print("Tip: Enter a question to chat with the Chan Master style AI, enter 'exit' to quit")
-        print("Query example: Chan Master, what is Chan Theory's central hub? / Stock + divergence judgment")
-        print("="*50)
-        
+        if args.query:
+            print(f"\n你: {args.query}")
+            response = chat.get_response(args.query)
+            print(f"\n禅师: {response}\n")
+            return
+
+        print("=" * 52)
+        print("  chanvip.skills  —  缠中说禅 · 全域AI技能包")
+        print("=" * 52)
+        print("  覆盖: 股票 · 音乐 · 经济 · 诗歌 · 哲学")
+        print("  输入问题即可对话，输入 exit 退出")
+        print("=" * 52)
+
         while True:
-            user_input = input("\nYou: ")
-            if user_input.lower() == "exit":
-                print("Chan Master Style AI: Thank you for the exchange, wish you gain something, goodbye!")
+            try:
+                user_input = input("\n你: ").strip()
+            except (EOFError, KeyboardInterrupt):
+                print("\n\n禅师: 有缘再见，修行路上再见！")
                 break
-            if not user_input.strip():
-                print("Chan Master Style AI: Please enter a specific question, and I will interpret it for you.")
+
+            if user_input.lower() in ("exit", "quit", "q"):
+                print("禅师: 有缘再见，修行路上再见！")
+                break
+            if not user_input:
+                print("禅师: 请提出具体问题，心诚则灵。")
                 continue
-            # Generate response
+
             response = chat.get_response(user_input)
-            print(f"\nChan Master Style AI: {response}")
-    
+            print(f"\n禅师: {response}")
+
     elif args.mode == "web":
-        # Start Web interface
         host = os.getenv("WEB_HOST", "0.0.0.0")
-        port = int(os.getenv("WEB_PORT", 8000))
-        print(f"Web interface started successfully, access address: http://{host}:{port}")
+        port = int(os.getenv("WEB_PORT", "8000"))
+        print(f"\n🚀 chanvip.skills Web 服务启动中...")
+        print(f"   访问地址: http://{host}:{port}")
+        print(f"   按 Ctrl+C 停止服务\n")
         run_web_app(chat)
 
 if __name__ == "__main__":
     try:
         main()
+    except KeyboardInterrupt:
+        print("\n\n禅师: 服务已停止，有缘再见！")
     except Exception as e:
-        print(f"Program running error: {str(e)}")
-        print("Please check the environment configuration (.env file) or whether the dependencies are fully installed, refer to the README.md deployment tutorial")
+        print(f"\n⚠️ 运行时错误: {e}")
+        print("请检查: 1) .env 文件是否配置正确  2) 依赖是否完整安装")
+        print("运行 'python setup_knowledge.py' 初始化知识库")
